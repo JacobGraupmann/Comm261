@@ -1,6 +1,6 @@
-a#breakfast :hover{
-    color: green;
-}
+a:hover {
+    color: #FF00FF;
+  }
 
 a#lunch :hover{
     color: red;
@@ -36,4 +36,7 @@ a#dinner :hover{
 h1{
     color: white;
     width: calc(10px + 100px);
+    font-family: 'Lobster', cursive;
 }
+#top{
+    font-weight: bolder;
