@@ -1,0 +1,130 @@
+a:hover {
+    color: #FF00FF;
+  }
+
+a#lunch :hover{
+    color: red;
+}
+
+a#dinner :hover{
+    color: blue;
+}
+
+#breakfastcss{
+    width: calc(10px + 300px);
+    border: 5px solid rgb(60, 179, 113);
+    margin: 20px;
+
+}
+
+#lunchcss{
+    width: 300px;
+    border: 5px solid hsl(0, 100%, 50%);
+    margin: 20px;
+}
+    
+#dinnercss{
+    width: 300px;
+    border: 5px solid rgb(0, 0, 255);
+    margin: 20px;
+}    
+
+* {
+    background-color: grey;
+}
+
+h1{
+    color: white;
+    width: calc(10px + 100px);
+    font-family: 'Lobster', cursive;
+}
+#top{
+    font-weight: bolder;
+}
+body, html {
+    height: 100%;
+  }
+  
+.bg {
+    /* The image used */
+    background-image: url("breakfast-lg.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.animate-pop-in {
+    animation : pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+    opacity:0;
+}
+@keyframes pop-in {
+    0% {
+        opacity:0;
+        transform: translateY(-4rem) scale(.8);
+    }
+    100% {
+        opacity:1;
+        transform: none;
+    }
+}
+.breakfast-img{
+    animation-delay: .6s;
+}
+.lunch-img{
+    animation-delay: .8s;
+}
+.dinner-img{
+    animation-delay: 1s;
+}
+@keyframes rotate-up {
+    100% {
+        transform: rotateZ(-4deg);
+    }
+}
+header:after {
+    animation: rotate-up .5s;
+}
+.grow::before {
+    content: "";
+  }
+.grow::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
+    transform: rotateZ(60deg) translate(-5em, 7.5em);
+  }
+  form {
+    background: #e5ac8e;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 0.5em;
+    padding: 0 1em;
+    position: relative;
+    overflow: hidden;
+    line-height: 32px;
+  }
+  form:hover::after, form:focus::after {
+    animation: sheen 1s forwards;
+  }
+
+  @keyframes sheen {
+    100% {
+      transform: rotateZ(60deg) translate(1em, -9em);
+    }
+  }
+  .grow { 
+    transition: all .2s ease-in-out; 
+    }
+    
+    .grow:hover { 
+    transform: scale(1.1); 
+    }
