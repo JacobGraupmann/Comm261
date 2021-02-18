@@ -1,4 +1,4 @@
-/* Learn how to create this and much more with this email course:
+  /* Learn how to create this and much more with this email course:
 
 https://cssanimation.rocks/courses/animation-101/
 
