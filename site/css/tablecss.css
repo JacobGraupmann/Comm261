@@ -1,0 +1,25 @@
+table, th, td {
+    border: 2px solid gray;
+}
+th{
+    background-color: purple;
+    color:white;
+    width: 327px;
+    height: 70px;
+    
+
+}
+
+table{
+    margin-bottom: 100px;
+}
+tr:hover {background-color: lightblue;}    
+
+.thcss{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+
+.otherrow{
+    background-color:lightgray;
+}

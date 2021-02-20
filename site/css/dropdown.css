@@ -1,0 +1,61 @@
+.pleasestop,
+.dontclick
+.warnedyou {
+    position: relative;
+}
+.dontclick:after{
+    content:"\25BC";
+    font-size: .5em;
+    display:block;
+    position: absolute;
+    top: 38%;
+    right: 12%;
+}
+.pleasestop:after{
+    content:"\25BC";
+    font-size: .5em;
+    display:block;
+    position: absolute;
+    top: 38%;
+    right: 12%;
+}
+.warnedyou:after{
+    content:"\25BC";
+    font-size: .5em;
+    display:block;
+    position: absolute;
+    top: 38%;
+    right: 12%;
+}
+.dontclick-nav,
+.warnedyou-nav,
+.pleasestop-nav {
+    position:absolute;
+    display:none;   
+}
+.dontclick-nav li {
+    border-bottom: 1px solid rgb(63, 63, 63);
+}
+.dontclick:hover > .dontclick-nav,
+.warnedyou:hover > .pleasestop-nav,
+.pleasestop:hover > .pleasestop-nav {
+    display:block;
+}
+.warnedyou-nav {
+    left: 100%;
+    top: 0;
+}
+.warnedyou:hover a,
+.warnedyou-nav {
+    background: rgb(63, 63, 63);
+}
+.pleasestop-nav {
+    left: 100%;
+    top: 0;
+}
+.pleasestop:hover a,
+.pleasestop-nav {
+    background: rgb(63, 63, 63);
+}
+
+
