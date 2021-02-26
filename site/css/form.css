@@ -266,3 +266,37 @@ p{
   font:bold;
   size:22px;
 }
+.formcss{
+  
+  border: 10px solid gray;
+  padding: 5%;
+  border-radius: 25px
+
+}
+.formcss > .formstuff > p{
+  font:bold;
+}
+.formcss{
+  background:rgba(182, 181, 179, 0.6);
+}
+.divider{
+  width:5px;
+  height:auto;
+  display:inline-block;
+}
+.button{
+  width:60px;
+  height:40px;
+}
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+input.checkboxcss {
+  width: 20px;
+  height: 20px;
+  margin-left:3%;
+}
+
+.textboxes{
+  margin-bottom: 10%;
+}

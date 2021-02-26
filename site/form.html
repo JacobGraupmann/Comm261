@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/form.css">
+	<link rel="stylesheet" href="css/dropdown2.css">
 
 </head>
 <body>
@@ -30,26 +31,56 @@
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<button aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarTogglerDemo01" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
 			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-					<li class="nav-item active"></li>
-					<li class="nav-item">
-						<a class="nav-link" href="../site/index.html">Back To Home Page</a>
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">  
+				  <div class="dropdownlist">
+					  <ul class="main-nav">
+						  <li><a href="index.html">Home</a></li>
+						  <li><a href="page2.html">Login</a></li>
+						  <li><a href="page4.html">Signup</a></li>
+						  <li><a href="page3.html">About</a></li>
+						  <li><a href="form.html">Form</a></li>
+						  <li><a href="page5.html">Account</a></li>
+					  
+						  <li class="dropdown">
+							  <a href="#">Don't go here</a>
+							  <ul class="drop-nav">
+								  <li class="flyout">
+									  <a href="#">Seriously </a>
+									  <ul class="flyout-nav">
+										  <li><a href="#">I'm</a></li>
+										  <li><a href="#">Warning</a></li>
+										  <li><a href="#">Ya</a></li>
+										  <li class="animals">
+											  <a href="#">Final chance</a>
+											  <ul class="animals-nav">
+												  <li><a href="#">Turn</a></li>
+												  <li><a href="#">Back</a></li>
+												  <li id="warning"><a href="warnedya.html">NOW!! (Click)</a></li>
+											  </ul>
+										  </li>
+									  </ul>
+								  </li>
+							  </ul>
+						  </li>
+					  </ul>
+					  </div>
 				</ul>
-			</div>
-		</nav>
+			  </div>
 	</div>
   <div class="formcss">
-  <form action="mail.php" method="POST">
-    <p>Name</p> <input type="text" name="name">
-    <p>Email</p> <input type="text" name="email">
-    <p>Phone</p> <input type="text" name="phone">
+  <form class="formstuff" action="mail.php" method="POST">
+    <p>Name</p> <input class="textboxes" type="text" name="name">
+    <p>Email</p> <input class="textboxes" type="text" name="email">
+    <p>Phone</p> <input class="textboxes" +type="text" name="phone">
     
     <p>Request Phone Call:</p>
-    Yes:<input type="checkbox" value="Yes" name="call"><br />
-    No:<input type="checkbox" value="No" name="call"><br />
+    Yes:<input class="checkboxcss" type="checkbox" value="Yes" name="call"><br />
+	<br />
+    No:<input class="checkboxcss" type="checkbox" value="No" name="call"><br />
+	<br />
     
-    <p>Website</p> <input type="text" name="website">
-    
+    <p>Company</p> <input type="text" name="website">
+    <br>
     <p>Priority</p>
     <select name="priority" size="1">
     <option value="Low">Low</option>
@@ -69,7 +100,10 @@
     <br />
     
     <p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
-    <input type="submit" value="Send"><input type="reset" value="Clear">
+	<br>	
+    <input class="button grow" type="submit" value="Send">
+	<div class="divider"></div>
+	<input class="button grow" type="reset" value="Clear">
     </form>
   </div>
   </br>
