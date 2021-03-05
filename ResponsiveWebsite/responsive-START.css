@@ -35,17 +35,17 @@ img {
   padding: 50px;
   display:flex;
   flex-direction: column;
-  align-content: start;
+  align-items: start;
   justify-content: center;
 }
 
 .hero > * {
-  background: var(--yellow);
+  background: yellow;
   padding: 5px;
 }
 
 .cta{
-  background: var(--yellow);
+  background: yellow;
   display: grid;
   align-items:center;
   justify-items:center;
@@ -61,7 +61,7 @@ img {
 }
 
 .cta2{
-  grid-area:cta2;
+  grid-area: cta2;
 }
 
 .price {
@@ -71,18 +71,19 @@ img {
 
 .menu ul{
   display:grid;
+  grid-gap:10px;
   padding: 0;
   list-style: none;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 .menu a {
-  background: var(--yellow);
+  background: yellow;
   display: block;
   text-decoration: none;
   padding: 10px;
   text-align: center;
-  color: var(--black);
+  color: black;
   text-transform: uppercase;
   font-size: 20px;
 }
@@ -101,7 +102,7 @@ img {
 .feature{
   background:white;
   padding: 10px;
-  border: 10x solid white;
+  border: 1px solid white;
   text-align: center;
   box-shadow: 0 0 4px rgba(0,0,0,0.1);
 }
@@ -114,7 +115,7 @@ img {
 .about{
   background: white;
   padding: 50px;
-  display:grid;
+  display:  grid;
   grid-template-columns: 400px 1fr;
   align-items: center;
 
@@ -139,11 +140,11 @@ img {
   width: 100%;
 }
 
-.gallery h2:before, gallery h2:after {
+.gallery h2:before, .gallery h2:after {
   display:block;
   content: '';
   height: 10px;
-  background: linear-gradient(to var(--directon, left), var(--yellow), transparent);
+  background: linear-gradient(to var(--directon, left), yellow, transparent);
 }
 
 .gallery h2:after{
