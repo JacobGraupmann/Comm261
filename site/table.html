@@ -13,11 +13,11 @@
 	<link href="css\solid.min.css?v=1.0" rel="stylesheet">
 	<link href="css\brands.min.css?v=1.0" rel="stylesheet">
 	<link rel="icon" type="image/png" href="img/controller.png"/>
-    <link rel="stylesheet" href="../site/css/form.css">
+    <link rel="stylesheet" href="../site/css/tablecss.css">
+	<link rel="stylesheet" href="../site/css/dropdown2.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/form.css">
-	<link rel="stylesheet" href="css/dropdown2.css">
+
 
 </head>
 <body>
@@ -60,49 +60,45 @@
 		  <br>
 		  <br>
 		  <br>
-		  	<h1>Check out our forms!</h1>
+		<h1>Keep up to date on the best prices out there</h1>
 	</div>
-
-  <div class="formcss">
-  <form class="formstuff" action="mail.php" method="POST">
-    <p>Name</p> <input class="textboxes" type="text" name="name">
-    <p>Email</p> <input class="textboxes" type="text" name="email">
-    <p>Phone</p> <input class="textboxes" +type="text" name="phone">
-    
-    <p>Request Phone Call:</p>
-    Yes:<input class="checkboxcss" type="checkbox" value="Yes" name="call"><br />
-	<br />
-    No:<input class="checkboxcss" type="checkbox" value="No" name="call"><br />
-	<br />
-    
-    <p>Company</p> <input type="text" name="website">
-    <br>
-    <p>Priority</p>
-    <select name="priority" size="1">
-    <option value="Low">Low</option>
-    <option value="Normal">Normal</option>
-    <option value="High">High</option>
-    <option value="Emergency">Emergency</option>
-    </select>
-    <br />
-    
-    <p>Type</p>
-    <select name="type" size="1">
-    <option value="update">Website Update</option>
-    <option value="change">Information Change</option>
-    <option value="addition">Information Addition</option>
-    <option value="new">New Products</option>
-    </select>
-    <br />
-    
-    <p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
-	<br>	
-    <input class="button grow" type="submit" value="Send">
-	<div class="divider"></div>
-	<input class="button grow" type="reset" value="Clear">
-    </form>
-  </div>
-  </br>
+        
+	<table class="center tableid">
+        <thead>
+          <tr>
+            <th class="thcss">Console</th>
+            <th class="thcss">Game Discount</th>
+            <th class="thcss">Discount Price</th>
+            <th class="thcss">Sale ends by</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>Nintendo Switch</td>
+            <td>Zelda</td>
+            <td>$49.99</td>
+            <td>2/28/2021</td>
+            </tr>
+            <tr class="otherrow">
+            <td>Xbox Series X</td>
+            <td>Call of Duty</td>
+            <td>$39.99</td>
+			<td>3/16/2021</td>
+            </tr>
+          <tr>
+            <td>Playstation 5</td>
+            <td>Uncharted 4</td>
+            <td>$29.99</td>
+			<td>5/12/2021</td>
+          </tr>
+		  <tr class="otherrow">
+            <td>Steam</td>
+            <td>Master Chief Collection</td>
+            <td>$19.99</td>
+			<td>6/5/2021</td>
+          </tr>
+        </tbody>
+    </table>      
 	<footer class="container bg-dark text-white p-4">
 		<p>Need help or want to connect click on the links below?</p>
 		<ul class="p-0 m-0">
